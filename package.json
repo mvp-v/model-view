@@ -2,6 +2,7 @@
   "name": "viewer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mvp-v.github.io/model-view",
   "dependencies": {
     "@react-three/drei": "^8.8.0",
     "@react-three/fiber": "^7.0.26",
@@ -23,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@types/three": "^0.137.0"
+    "@types/three": "^0.137.0",
+    "gh-pages": "^3.2.3"
   }
 }

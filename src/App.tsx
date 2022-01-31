@@ -39,7 +39,7 @@ function Light() {
 
 function Watch(props: any) {
   const ref = useRef<any>()
-  const gltf = useGLTF('/fire.gltf') as any;
+  const gltf = useGLTF('./fire.gltf') as any;
   console.log('scene', gltf);
   useFrame((state) => {
     const t = 0; // state.clock.getElapsedTime()
